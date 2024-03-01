@@ -1,5 +1,6 @@
 ---
 title:  "How I Made This Website with Github"
+exerpt: false
 date: 2024-03-01
 layout: single
 header:
