@@ -18,19 +18,19 @@ If you’re ok with a little pain and a lot of gain, follow along to make your o
 Free, pre-designed [templates from Jekyll](https://jekyllthemes.io/free) can be directly incorporated into a GitHub Pages website. I chose the [Minimal Mistakes](https://jekyllthemes.io/theme/minimal-mistakes) theme, then clicked the button `Get Minimal Mistakes on GitHub` at the top of the landing page.
 
 <figure>
-  <img src="../assets/images/website-creation-post/pic1.jpg" alt="Get Minimal Mistakes on GitHub">
+  <img src="../assets/images/website-creation-post/pic1.png" alt="Get Minimal Mistakes on GitHub">
 </figure>
 
 I tried a few options described [here](https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/), but the easiest method was to fork the [repository](https://github.com/mmistakes/minimal-mistakes) from GitHub. 
 
 <figure>
-  <img src="../assets/images/website-creation-post/pic2.jpg" alt="Fork Minimal Mistakes Repository">
+  <img src="../assets/images/website-creation-post/pic2.png" alt="Fork Minimal Mistakes Repository">
 </figure>
 
 For your site, you should name the forked repository `[github-username].github.io`. I tested naming it something other than my GitHub username and ran into problems building the website. Next, I went to my GitHub page, navigated to the new repository called `[github-username].github.io` and clicked `Settings`. I set the "Default branch" to "master". Then I clicked “Pages” on the sidebar under “Code and automation”. I chose `Deploy from a branch` from the drop-down under “Source” and set it to “master”. Then I was able to deploy the site by clicking `Visit site`. 
 
 <figure>
-  <img src="../assets/images/website-creation-post/pic3.jpg" alt="Deploy GitHub website">
+  <img src="../assets/images/website-creation-post/pic3.png" alt="Deploy GitHub website">
 </figure>
 
 For now, your site is an exact replica of the Jekyll template. Following Jekyll’s recommendation, I cleaned up the repository by removing the following folders and files that aren’t needed for my personal website:
