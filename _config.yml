@@ -23,7 +23,7 @@ name                     : "Alexandra E. Jones-Kellett"
 description              : "Professional website"
 url                      : "https://lexi-jones.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
-repository               : "lexi-jones/https://lexi-jones.github.io"
+repository               : "lexi-jones/lexi-jones.github.io"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 logo                     : # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
@@ -59,7 +59,7 @@ reCaptcha:
 atom_feed:
   path                   : # blank (default) uses feed.xml
   hide                   : true #false (default)
-search                   : # true, false (default)
+search                   : true #false (default)
 search_full_content      : # true, false (default)
 search_provider          : # lunr (default), algolia, google
 lunr:
@@ -108,7 +108,7 @@ author:
   avatar           : "/assets/images/portrait.png"
   bio              : "Studying plankton in North Pacific mesoscale ocean currents at MIT."
   location         : "Boston, MA, USA"
-  email            :
+  email            : "jonesae@mit.edu"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
