@@ -292,9 +292,3 @@ defaults:
       comments: # true
       share: true
       related: true
-
-  - scope:
-      path: ""
-      type: pages
-    values:
-      author_profile: true
