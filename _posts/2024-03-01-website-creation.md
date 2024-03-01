@@ -1,6 +1,12 @@
 ---
-layout: post
 title:  "How I Made This Website"
+date: 2020-04-06
+layout: single
+categories:
+  - blog
+tags:
+  - Jekyll
+  - update
 header:
   teaser: "/assets/images/teaser.jpg"
 ---
