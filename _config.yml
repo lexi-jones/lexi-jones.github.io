@@ -20,7 +20,7 @@ title                    : "Alexandra E. Jones-Kellett"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "Alexandra E. Jones-Kellett"
-description              : "An amazing website."
+description              : "Professional website"
 url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -104,18 +104,15 @@ analytics:
 
 # Site Author
 author:
-  name             : "Alexandra E. Jones-Kellett"
+  name             : "Lexi (she/her)"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am an **amazing** person."
+  bio              : "Studying plankton in North Pacific mesoscale ocean currents at MIT."
   location         : "Boston, MA, USA"
   email            :
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
       url: "jonesae@mit.edu"
-    - label: "Website"
-      icon: "fas fa-fw fa-link"
-      url: "https://lexi-jones@github.io"
     - label: "Google Scholar"
       icon: "fa-brands fa-google-scholar" 
       url: "https://scholar.google.com/citations?user=mVTgdeIAAAAJ&hl=en"
