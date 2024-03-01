@@ -12,7 +12,7 @@
 
 # theme                  : "minimal-mistakes-jekyll"
 # remote_theme           : "mmistakes/minimal-mistakes"
-minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+minimal_mistakes_skin    : "air" #"default", "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
 locale                   : "en-US"
@@ -114,13 +114,13 @@ author:
       icon: "fas fa-fw fa-envelope-square"
       url: "jonesae@mit.edu"
     - label: "Google Scholar"
-      icon: "fa-brands fa-google-scholar" 
+      icon: "fab fa-brands fa-google-scholar" 
       url: "https://scholar.google.com/citations?user=mVTgdeIAAAAJ&hl=en"
     - label: "ORCiD"
-      icon: "fa-brands fa-orcid"
+      icon: "fab fa-brands fa-orcid"
       url: "https://orcid.org/0000-0002-1727-2219"
     - label: "ResearchGate"
-      icon: "fa-brands fa-researchgate"
+      icon: "fab fa-brands fa-researchgate"
       url: "https://www.researchgate.net/profile/Alexandra-Jones-Kellett"
     - label: "LinkedIn"
       icon: "fab fa-linkedin"
@@ -136,13 +136,13 @@ author:
 footer:
   links:
     - label: "Google Scholar"
-      icon: "fa-brands fa-google-scholar" 
+      icon: "fab fa-brands fa-google-scholar" 
       url: "https://scholar.google.com/citations?user=mVTgdeIAAAAJ&hl=en"
     - label: "ORCiD"
-      icon: "fa-brands fa-orcid"
+      icon: "fab fa-brands fa-orcid"
       url: "https://orcid.org/0000-0002-1727-2219"
     - label: "ResearchGate"
-      icon: "fa-brands fa-researchgate"
+      icon: "fab fa-brands fa-researchgate"
       url: "https://www.researchgate.net/profile/Alexandra-Jones-Kellett"
     - label: "LinkedIn"
       icon: "fab fa-linkedin"
