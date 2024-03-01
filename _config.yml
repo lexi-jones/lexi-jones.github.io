@@ -108,7 +108,7 @@ author:
   avatar           : "/assets/images/portrait.png"
   bio              : "Studying plankton in North Pacific mesoscale ocean currents at MIT."
   location         : "Boston, MA, USA"
-  email            : "jonesae@mit.edu"
+  email            : 
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
@@ -295,3 +295,4 @@ defaults:
       comments: # true
       share: true
       related: true
+      exerpt: false
