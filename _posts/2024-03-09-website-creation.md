@@ -1,10 +1,10 @@
 ---
 title:  "How I Made This Website with Github"
-date: 2024-03-01
-excerpt: "March 1, 2024"
+date: 2024-03-09
+excerpt: "March 9, 2024"
 layout: single
 header:
-  teaser: "../assets/images/2024-03-01-website-creation/teaser_githubpages.jpeg"
+  teaser: "../assets/images/2024-03-09-website-creation/teaser_githubpages.png"
 ---
 
 I think an appropriate first post is to describe how I built this website, hopefully making it easier for you than it was for me. My goal was to create a landing page with links to my various professional pages, include information about my research, and host blog posts like this one. For the design, I wanted something minimalistic and streamlined so that I did not have to make a lot of adjustments over time.
@@ -19,19 +19,19 @@ If you’re ok with a little pain and a lot of gain, follow along to make your o
 Free, pre-designed [templates from Jekyll](https://jekyllthemes.io/free) can be directly incorporated into a GitHub Pages website. I chose the [Minimal Mistakes](https://jekyllthemes.io/theme/minimal-mistakes) theme and clicked the button `Get Minimal Mistakes on GitHub` at the top of the landing page.
 
 <figure>
-  <img src="../assets/images/2024-03-01-website-creation/pic1.png" alt="Get Minimal Mistakes on GitHub">
+  <img src="../assets/images/2024-03-09-website-creation/pic1.png" alt="Get Minimal Mistakes on GitHub">
 </figure>
 
 I tried the options described [here](https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/), but the easiest method for me was to fork the repository from GitHub. However, there are some downsides to forking that you should be aware of that I describe in the next section. To start, you should name the forked repository `[github-username].github.io`. I tried naming it something other than my GitHub username and ran into problems building the website. You can customize the domain name later if that is of interest to you.
 
 <figure>
-  <img src="../assets/images/2024-03-01-website-creation/pic2.png" alt="Fork Minimal Mistakes Repository">
+  <img src="../assets/images/2024-03-09-website-creation/pic2.png" alt="Fork Minimal Mistakes Repository">
 </figure>
 
 Next, I went to my GitHub page, navigated to the new repository called `[github-username].github.io`, and clicked the `Settings` tab. I set the `Default branch` to `master`. Then I clicked `Pages` on the sidebar under `Code and automation`. I chose `Deploy from a branch` from the `Source` drop-down and set it to `master`. Then I was able to deploy the site by clicking `Visit site`. 
 
 <figure>
-  <img src="../assets/images/2024-03-01-website-creation/pic3.png" alt="Deploy GitHub website">
+  <img src="../assets/images/2024-03-09-website-creation/pic3.png" alt="Deploy GitHub website">
 </figure>
 
 At this point, it was a replica of the Jekyll template. Following Jekyll’s recommendation, I cleaned up the repository by removing the following folders and files that aren’t needed for my personal website:
@@ -57,7 +57,7 @@ When the repository exists as a fork, there will be this message at the top of y
 I wanted my repository to be independent of the base repository, so I submitted a detach/extract fork request with GitHub Support [here](https://support.github.com/request/fork).
 
 <figure>
-  <img src="../assets/images/2024-03-01-website-creation/pic4_detach.png" alt="Detach/Extract request with the Github Virtual Assistant">
+  <img src="../assets/images/2024-03-09-website-creation/pic4_detach.png" alt="Detach/Extract request with the Github Virtual Assistant">
 </figure>
 The Virtual Assistant asked why I wanted to detach the fork, and in this case, it is because “The repository was initially based on a boilerplate or template repository”. Then GitHub Support created a ticket for the request, and it was approved in a day and a half. Yay! Now my fork is detached and behaves as its entirely own repository.
 
@@ -82,7 +82,7 @@ Here is a basic workflow:
 **Warning if you did not detach your fork:** After pushing changes to the master branch, be careful that your pull request is directed to your base repository (`[github-username].github.io`) and not the originally forked repository (`mmistakes/minimal-mistakes`), or any other, for that matter.
 
 <figure>
-  <img src="../assets/images/2024-03-01-website-creation/pic5_pull_request.png" alt="Pull Request">
+  <img src="../assets/images/2024-03-09-website-creation/pic5_pull_request.png" alt="Pull Request">
 </figure>
 
 ### Basic Information and Settings
@@ -91,7 +91,7 @@ The first customization I did was edit the `_config.yml` file. There I chose a [
 One issue I noticed with the footer was a feed button that led to a broken webpage. Buried in the Minimal Mistakes [Configuration page](https://mmistakes.github.io/minimal-mistakes/docs/configuration/) there is information about how to hide this button. In the `_config.yml` file, I `CTRL+F` searched for `atom_feed`, and set `hide: true`. Right under that parameter, I also set `search : true`, which enables the search option in the top right of the website menu.
 
 <figure>
-  <img src="../assets/images/2024-03-01-website-creation/pic6_atom_feed.png" alt="atom_feed parameters">
+  <img src="../assets/images/2024-03-09-website-creation/pic6_atom_feed.png" alt="atom_feed parameters">
 </figure>
 
 To add a photo to my author profile, I created a subdirectory called `images` within the `assets` directory. I added a photo to the subdirectory and set `avatar: "/assets/images/[name-of-image].png"` in the `_config.yml` file. 
@@ -100,7 +100,7 @@ To add a photo to my author profile, I created a subdirectory called `images` wi
 To create the navigable pages on the top of my website, I created an `.html` file in the root of my repository for each one, following [this blog](https://blog.webjeda.com/new-page-jekyll/). The content of the files look something like this:
 
 <figure>
-  <img src="../assets/images/2024-03-01-website-creation/pic7_front_matter.png" alt="YAML Front Matter of research.html" style="max-width: 50%;">
+  <img src="../assets/images/2024-03-09-website-creation/pic7_front_matter.png" alt="YAML Front Matter of research.html" style="max-width: 50%;">
 </figure>
 
 The section in between the triple dashes is referred to as the page’s "YAML Front Matter". The URLs in the `/_data/nativation.yml` file need to match the permalink parameter in the Front Matter. The layout for each page can be selected from presets built into the Minimal Mistakes template, described here. By setting `author_profile : true`, the author profile will show on the page as long as the layout allows it. Everything below the dashed line is the content that will appear on the page. You can follow this [GitHub guide]( https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax) for tips on HTML syntax.
@@ -108,13 +108,37 @@ The section in between the triple dashes is referred to as the page’s "YAML Fr
 I wanted to make my main landing page the same, whether users click the website title or the About page in the header of the website. To do so, I deleted the `index.html` file and set  `permalink: /`  in the Front Matter of `about.html`:
 
 <figure>
-  <img src="../assets/images/2024-03-01-website-creation/pic8.png" alt="YAML Front Matter of about.html"  style="max-width: 50%;">
+  <img src="../assets/images/2024-03-09-website-creation/pic8.png" alt="YAML Front Matter of about.html"  style="max-width: 50%;">
 </figure>
 
 I updated the URL in `/_data/nativation.yml` to match the new permalink:
 
 <figure>
-  <img src="../assets/images/2024-03-01-website-creation/pic9.png" alt="YAML Front Matter of about.html"  style="max-width: 50%;">
+  <img src="../assets/images/2024-03-09-website-creation/pic9.png" alt="Content of navigation.yml"  style="max-width: 50%;">
 </figure>
 
 ### Posts
+
+I wanted my blog page to look something like [this]( https://www.janmeppe.com/posts-grid/). Luckily, Minimal Mistakes has built-in features for a blog, described [here]( https://mmistakes.github.io/minimal-mistakes/docs/posts/). I created the main HTML file in the root directory called `posts.html` and updated the `navigation.yml` path. Just like the other main pages, the top of `posts.html` starts with YAML Front Matter. This time, I set `layout: posts` and `entries_layout: grid`:
+
+<figure>
+  <img src="../assets/images/2024-03-09-website-creation/pic10_posts.png" alt="YAML Front Matter of posts.html"  style="max-width: 50%;">
+</figure>
+
+Next, I created a new directory called `_posts` to host each post. The content of each post goes in its own file titled `YYYY-MM-DD-title.md`. This format is synergistic with the settings built into Minimal Mistakes, allowing it to automatically organize the posts by date. The `.md` also will be formatted with Front Matter. The `title` will appear at the top of the post, as well as the link on the `Posts` page. The `date` should match the file title. If you do not include `excerpt` in the Front Matter, then the first couple of words of the post will appear on the `Posts` page under the title. You can override this by setting your preferred excerpt. To include an image with the link to the blog, set the following parameters:
+```
+header: 
+  teaser: “../assets/images/title-of-image”
+```
+
+<figure>
+  <img src="../assets/images/2024-03-09-website-creation/pic11_post_front_matter.png" alt="YAML Front Matter of a post .md file">
+</figure>
+
+### Gallery
+
+Making a gallery was shockingly easy. To do so, I followed [this blog post](https://mmistakes.github.io/minimal-mistakes/post%20formats/post-gallery/). It is a built-in feature that users of the website can click any image in the gallery to blow it up, and then click through each image using left and right arrows.
+
+## Main Takeaways
+
+The hardest part of getting my website up and running with GitHub Pages was the trial and error of the setup. I ran into big issues like package installation errors, to small problems like spelling errors in my Front Matter. Now that I’ve finished building the skeleton of my website, it has been smooth sailing. I love the streamlined look of it, and I’m excited to see how the website content evolves with time. Overall, I’m glad to have made the plunge with GitHub Pages.
