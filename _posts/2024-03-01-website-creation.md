@@ -4,12 +4,12 @@ date: 2024-03-01
 excerpt: "March 1, 2024"
 layout: single
 header:
-  teaser: "../assets/images/2024-03-01-website-creation/teaser.jpeg"
+  teaser: "../assets/images/2024-03-01-website-creation/teaser_githubpages.jpeg"
 ---
 
 I think an appropriate first post is to describe how I built this website, hopefully making it easier for you than it was for me. My goal was to create a landing page with links to my various professional pages, include information about my research, and host blog posts like this one. For the design, I wanted something minimalistic and streamlined so that I did not have to make a lot of adjustments over time.
 
-I was drawn to using GitHub Pages as my website builder because my work is computational. Although this route is not as user-friendly as others (e.g. Squarespace, Wix, etc.), it is free, and my website URL matches my GitHub page. As a personal bonus, building a website with GitHub inherently provides extra practice using Git commands, which I am always trying to get better at.
+I was drawn to using GitHub Pages as my website builder because my work is computational. Although this route is not as user-friendly as others (e.g. Squarespace, Wix, etc.), it is free, and my website URL matches my GitHub page. As a personal bonus, building a website with GitHub inherently provides extra practice using Git commands, which I am trying to get better at.
 
 If you’re ok with a little pain and a lot of gain, follow along to make your own GitHub website! 
 
@@ -79,7 +79,7 @@ Here is a basic workflow:
  - `git push origin [branch-name]`
 4. Create a pull request to the main branch on GitHub. Changes to the website should appear in a few minutes.
 
-**Warning if you did not detach your fork**: After pushing changes to the master branch, be careful that your pull request is directed to your base repository (`[github-username].github.io`) and not the originally forked repository (`mmistakes/minimal-mistakes`), or any other, for that matter.
+**Warning if you did not detach your fork:** After pushing changes to the master branch, be careful that your pull request is directed to your base repository (`[github-username].github.io`) and not the originally forked repository (`mmistakes/minimal-mistakes`), or any other, for that matter.
 
 <figure>
   <img src="../assets/images/2024-03-01-website-creation/pic5_pull_request.png" alt="Pull Request">
@@ -100,7 +100,7 @@ To add a photo to my author profile, I created a subdirectory called `images` wi
 To create the navigable pages on the top of my website, I created an `.html` file in the root of my repository for each one, following [this blog](https://blog.webjeda.com/new-page-jekyll/). The content of the files look something like this:
 
 <figure>
-  <img src="../assets/images/2024-03-01-website-creation/pic7_front_matter.png" alt="YAML Front Matter of research.html">
+  <img src="../assets/images/2024-03-01-website-creation/pic7_front_matter.png" alt="YAML Front Matter of research.html" style="max-width: 50%;">
 </figure>
 
 The section in between the triple dashes is referred to as the page’s "YAML Front Matter". The URLs in the `/_data/nativation.yml` file need to match the permalink parameter in the Front Matter. The layout for each page can be selected from presets built into the Minimal Mistakes template, described here. By setting `author_profile : true`, the author profile will show on the page as long as the layout allows it. Everything below the dashed line is the content that will appear on the page. You can follow this [GitHub guide]( https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax) for tips on HTML syntax.
@@ -108,13 +108,13 @@ The section in between the triple dashes is referred to as the page’s "YAML Fr
 I wanted to make my main landing page the same, whether users click the website title or the About page in the header of the website. To do so, I deleted the `index.html` file and set  `permalink: /`  in the Front Matter of `about.html`:
 
 <figure>
-  <img src="../assets/images/2024-03-01-website-creation/pic8.png" alt="YAML Front Matter of about.html">
+  <img src="../assets/images/2024-03-01-website-creation/pic8.png" alt="YAML Front Matter of about.html"  style="max-width: 50%;">
 </figure>
 
 I updated the URL in `/_data/nativation.yml` to match the new permalink:
 
 <figure>
-  <img src="../assets/images/2024-03-01-website-creation/pic9.png" alt="YAML Front Matter of about.html">
+  <img src="../assets/images/2024-03-01-website-creation/pic9.png" alt="YAML Front Matter of about.html"  style="max-width: 50%;">
 </figure>
 
 ### Posts
