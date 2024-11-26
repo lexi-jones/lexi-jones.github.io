@@ -16,10 +16,10 @@ minimal_mistakes_skin    : "air" # "air", "aqua", "contrast", "dark", "default" 
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Alexandra E. Jones-Kellett"
+title                    : "Alexandra E. Jones-Kellett, Ph.D."
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
-name                     : "Alexandra E. Jones-Kellett"
+name                     : "Alexandra E. Jones-Kellett, Ph.D."
 description              : "Professional website"
 url                      : "https://lexi-jones.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
@@ -104,9 +104,9 @@ analytics:
 
 # Site Author
 author:
-  name             : "Lexi (she/her)"
+  name             : "Lexi Jones-Kellett"
   avatar           : "/assets/images/portrait.png"
-  bio              : "MIT-WHOI PhD candidate studying phytoplankton in North Pacific mesoscale eddies."
+  bio              : "MIT EAPS Postdoctoral Associate, Oceanographer"
   location         : "Boston, MA, USA"
   email            : jonesae@mit.edu
   links:
